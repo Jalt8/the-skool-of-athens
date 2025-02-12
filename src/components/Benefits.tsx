@@ -49,7 +49,7 @@ const benefits = [
   {
     category: 'HEALTH',
     title: 'Entrepreneurial Biohacking',
-    description: 'Learn science-backed strategies to enhance your physical & mental performance, ensuring you&apos;re always operating at your peak.',
+    description: 'Learn science-backed strategies to enhance your physical & mental performance, ensuring you're always operating at your peak.',
     image: '/MMEpywHhOuLAJFlhiFqkZf7V6GU.png'
   },
   {
@@ -104,7 +104,7 @@ export default function Benefits() {
           </div>
           
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-            Here&apos;s The Value You&apos;ll Receive After Our{' '}
+            Here's The Value You'll Receive After Our{' '}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-greek-gold via-greek-gold-light to-greek-gold bg-clip-text text-transparent">
                 Consultation Call
