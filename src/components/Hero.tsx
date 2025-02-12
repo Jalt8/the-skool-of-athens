@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
 
         {/* Main heading */}
-        <h1 className="font-serif text-[1.75rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.5rem] leading-[1.1] mb-4 md:mb-6 text-center px-4">
+        <h1 className="font-serif text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-[1.1] mb-4 md:mb-6 text-center px-4">
           You&apos;re One Step Away From Learning How You Can<br />
           Charge Business Owners $1,000 - $10,000 Per<br /> 
           Month Working From{' '}<span className="text-greek-gold">Anywhere In The World.</span>
