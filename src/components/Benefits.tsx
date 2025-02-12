@@ -49,7 +49,7 @@ const benefits = [
   {
     category: 'HEALTH',
     title: 'Entrepreneurial Biohacking',
-    description: 'Learn science-backed strategies to enhance your physical & mental performance, ensuring you're always operating at your peak.',
+    description: 'Learn science-backed strategies to enhance your physical & mental performance, ensuring you\'re always operating at your peak.',
     image: '/MMEpywHhOuLAJFlhiFqkZf7V6GU.png'
   },
   {

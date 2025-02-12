@@ -34,9 +34,9 @@ export default function Hero() {
 
         {/* Main heading */}
         <h1 className="font-serif text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3rem] leading-[1.1] mb-4 md:mb-6 text-center px-4">
-          You&apos;re One Step Away From Learning How You Can<br />
+          You're One Step Away From Learning How You Can<br />
           Charge Business Owners $1,000 - $10,000 Per<br /> 
-          Month Working From{' '}<span className="text-greek-gold">Anywhere In The World.</span>
+          Month Working From <span className="text-greek-gold">Anywhere In The World.</span>
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-greek-marble/80 mb-8 md:mb-12 text-center">
