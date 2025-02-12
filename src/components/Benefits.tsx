@@ -31,25 +31,25 @@ const benefits = [
   {
     category: 'WEALTH',
     title: 'Scaling Strategies',
-    description: 'Discover the exact frameworks we used to scale, whether through client acquisition, increasing client value (LTV), or optimizing systems.',
+    description: "Discover the exact frameworks we used to scale, whether through client acquisition, increasing client value (LTV), or optimizing systems.",
     image: '/6MZ36dDdSxJA93i0q9i06JIXYis.png'
   },
   {
     category: 'WEALTH',
     title: 'Service Delivery Excellence',
-    description: 'Learn how to consistently deliver exceptional results for clients, ensuring retention, referrals, & a stellar reputation.',
+    description: "Learn how to consistently deliver exceptional results for clients, ensuring retention, referrals, & a stellar reputation.",
     image: '/0bytOeylLuuOfJLqjpJcc6R2LI.png'
   },
   {
     category: 'WEALTH',
     title: 'Time, Location, & Financial Freedom',
-    description: 'Build a business that supports the freedom to work when, where, & how you want while making more money that you know what to do with.',
+    description: 'Build a business that supports the freedom to work when, where, & how you want while making more money than you know what to do with.',
     image: '/z3yKwFUg24Xo9nCrEOdjaHX437o.png'
   },
   {
     category: 'HEALTH',
     title: 'Entrepreneurial Biohacking',
-    description: 'Learn science-backed strategies to enhance your physical & mental performance, ensuring you\'re always operating at your peak.',
+    description: 'Learn science-backed strategies to enhance your physical & mental performance, ensuring you&apos;re always operating at your peak.',
     image: '/MMEpywHhOuLAJFlhiFqkZf7V6GU.png'
   },
   {
@@ -104,7 +104,7 @@ export default function Benefits() {
           </div>
           
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-            Here's The Value You'll Receive After Our{' '}
+            Here&apos;s The Value You&apos;ll Receive After Our{' '}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-greek-gold via-greek-gold-light to-greek-gold bg-clip-text text-transparent">
                 Consultation Call

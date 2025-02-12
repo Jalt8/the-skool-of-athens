@@ -33,7 +33,7 @@ export default function Hero() {
 
           {/* Main heading */}
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-4 md:mb-6">
-            You're One Step Away From Learning How You Can{' '}
+            You&apos;re One Step Away From Learning How You Can{' '}
             <span className="text-greek-gold">Charge Business Owners</span>{' '}
             <div className="text-greek-gold">$1,000 - $10,000</div>{' '}
             Per Month Working From{' '}

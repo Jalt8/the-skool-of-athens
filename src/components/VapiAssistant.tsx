@@ -5,7 +5,7 @@ import Vapi from '@vapi-ai/web';
 
 declare global {
   interface Window {
-    vapiSDK: any;
+    vapiSDK: typeof Vapi | undefined;
   }
 }
 

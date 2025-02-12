@@ -4,24 +4,24 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: "What if I don't have any experience running a business or signing clients?",
-    answer: "You don't need prior experience. Our program is designed to teach you step-by-step how to start & scale an agency, even if you're starting from scratch. We provide the tools, strategies, & support to make success the path of least resistance."
+    question: "What if I don&apos;t have any experience running a business or signing clients?",
+    answer: "You don&apos;t need prior experience. Our program is designed to teach you step-by-step how to start & scale an agency, even if you&apos;re starting from scratch. We provide the tools, strategies, & support to make success the path of least resistance."
   },
   {
-    question: "How much time will this require? I'm already busy with work & other commitments.",
-    answer: "The program is designed with busy individuals in mind. You'll learn how to maximize efficiency & energy, focus on 80/20 activities, & leverage systems to build a business that runs on autopilot."
+    question: "How much time will this require? I&apos;m already busy with work & other commitments.",
+    answer: "The program is designed with busy individuals in mind. You&apos;ll learn how to maximize efficiency & energy, focus on 80/20 activities, & leverage systems to build a business that runs on autopilot."
   },
   {
-    question: "What if I'm not good at sales or I'm afraid of rejection?",
-    answer: "Sales is a skill anyone can learn. We provide proven scripts, training, & guidance to help you confidently close deals, even if you're a complete beginner. Rejection is just part of the process, & we'll show you how to handle it like a ninja."
+    question: "What if I&apos;m not good at sales or I&apos;m afraid of rejection?",
+    answer: "Sales is a skill anyone can learn. We provide proven scripts, training, & guidance to help you confidently close deals, even if you&apos;re a complete beginner. Rejection is just part of the process, & we&apos;ll show you how to handle it like a ninja."
   },
   {
-    question: "I'm not sure I can afford to invest in this right now.",
-    answer: "Building your own business is one of the best investments you can make in your future. Our program is designed to help you quickly land high-ticket clients so you can generate a return on your investment faster than you might think. If you're not winning, we're not winning."
+    question: "I&apos;m not sure I can afford to invest in this right now.",
+    answer: "Building your own business is one of the best investments you can make in your future. Our program is designed to help you quickly land high-ticket clients so you can generate a return on your investment faster than you might think. If you&apos;re not winning, we&apos;re not winning."
   },
   {
-    question: "I don't think I can keep up with the health side of things — what if I fail?",
-    answer: "The health strategies we teach are simple, sustainable, & designed for entrepreneurs with a busy schedule. You'll learn how to implement small, consistent changes that create massive improvements in your energy, focus, & overall well-being, ensuring you make money forever, not just for two years."
+    question: "I don&apos;t think I can keep up with the health side of things — what if I fail?",
+    answer: "The health strategies we teach are simple, sustainable, & designed for entrepreneurs with a busy schedule. You&apos;ll learn how to implement small, consistent changes that create massive improvements in your energy, focus, & overall well-being, ensuring you make money forever, not just for two years."
   }
 ];
 
@@ -39,7 +39,7 @@ export default function FAQ() {
           </div>
           <h2 className="font-serif text-4xl md:text-5xl">
             Got Questions?{' '}
-            <span className="text-greek-gold">We've Got Answers.</span>
+            <span className="text-greek-gold">We&apos;ve Got Answers.</span>
           </h2>
         </div>
 

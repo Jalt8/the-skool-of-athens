@@ -3,7 +3,6 @@ import Hero from '@/components/Hero';
 import Benefits from '@/components/Benefits';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
-import Booking from '@/components/Booking';
 import CalendlyEmbed from '@/components/CalendlyEmbed';
 
 export default function Home() {
