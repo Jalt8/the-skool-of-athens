@@ -81,6 +81,7 @@ const config: Config = {
         'fade-out': 'fade-out 0.5s ease-in',
         'slide-in': 'slide-in 0.5s ease-out',
         'slide-out': 'slide-out 0.5s ease-in',
+        'bounce-slow': 'bounce 3s ease-in-out infinite',
       },
       keyframes: {
         'gradient': {

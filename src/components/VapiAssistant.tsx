@@ -229,29 +229,34 @@ export default function VapiAssistant() {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-8 right-32 z-50">
       <div className="flex flex-col items-end gap-4">
-        {/* Call duration and volume indicators */}
-        {isCallActive && (
-          <div className="flex flex-col gap-2 bg-dark-100/90 backdrop-blur-sm rounded-lg p-2 border border-greek-gold/20">
-            {/* Call duration */}
-            <div className="flex items-center gap-2">
-              <svg className="w-4 h-4 text-greek-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <div className="text-sm text-greek-marble/80">
-                {formatTime(remainingCallTime)}
+        {/* Welcome message or Active call info */}
+        <div className={`bg-dark-100/90 backdrop-blur-sm rounded-lg px-4 py-3 border border-greek-gold/20 ${
+          isCallActive ? '' : 'animate-float'
+        }`}>
+          {isCallActive ? (
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-2 text-greek-marble">
+                <svg className="w-4 h-4 text-greek-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="text-sm">Time Remaining: {formatTime(remainingCallTime)}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-greek-marble/60">Voice Level:</span>
+                <div className="h-1 w-24 bg-dark-200 rounded-full overflow-hidden">
+                  <div 
+                    className="h-full bg-greek-gold transition-all duration-150"
+                    style={{ width: `${volumeLevel * 100}%` }}
+                  />
+                </div>
               </div>
             </div>
-            {/* Volume bar */}
-            <div className="h-1 w-24 bg-dark-200 rounded-full overflow-hidden">
-              <div 
-                className="h-full bg-greek-gold transition-all duration-150"
-                style={{ width: `${volumeLevel * 100}%` }}
-              />
-            </div>
-          </div>
-        )}
+          ) : (
+            <span className="text-sm text-greek-marble whitespace-nowrap">Click to Talk with AI Assistant</span>
+          )}
+        </div>
         
         {/* Control buttons */}
         <div className="flex items-center gap-2">
@@ -263,6 +268,7 @@ export default function VapiAssistant() {
                   ? 'bg-red-500/90 hover:bg-red-600/90' 
                   : 'bg-dark-100/90 hover:bg-dark-200/90'
               } backdrop-blur-sm border border-greek-gold/20`}
+              title={isMuted ? "Unmute Microphone" : "Mute Microphone"}
             >
               {isMuted ? (
                 <MicOffIcon className="w-5 h-5 text-white" />
@@ -275,17 +281,19 @@ export default function VapiAssistant() {
           <button
             onClick={isCallActive ? stopCall : startCall}
             disabled={hasExceededHourlyLimit()}
-            className={`group relative overflow-hidden rounded-full p-4 transition-all duration-300 ${
+            className={`group relative overflow-hidden rounded-full p-6 transition-all duration-300 ${
               hasExceededHourlyLimit()
                 ? 'bg-greek-gold/50 cursor-not-allowed'
-                : 'bg-greek-gold hover:bg-greek-gold-light'
+                : isCallActive 
+                  ? 'bg-red-500 hover:bg-red-600' 
+                  : 'bg-greek-gold hover:bg-greek-gold-light'
             }`}
             title={isCallActive ? "End AI Call" : "Start AI Call"}
           >
             {isCallActive ? (
-              <PhoneOffIcon className="w-6 h-6 text-dark" />
+              <PhoneOffIcon className="w-8 h-8 text-white" />
             ) : (
-              <PhoneIcon className="w-6 h-6 text-dark" />
+              <PhoneIcon className="w-8 h-8 text-dark" />
             )}
             <div className="absolute inset-0 rounded-full border border-greek-gold/50 scale-110 group-hover:animate-ping" />
           </button>
